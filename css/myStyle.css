@@ -1,0 +1,202 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    /* satuan selain px ada juga em, 
+    em ini akan mengacu kepada master size yg satuannya px atau default nya 11px
+    jd kalau dipanggil 2 pm berarti dua kali nilai pixelnya
+    dan em selalu ambil dari font-size tp bs diaplikasiin ke image-height jg */
+}
+
+/*HEADER*/
+
+.header {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: url('../img/bg.jpeg') no-repeat center scroll; /* scroll ini kayak responsive, 
+    jd nanti imagenya akan ngikut kl browsernya digede-kecilin */
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.header-name{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 35px;
+}
+
+.header-occupation{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #000000;
+}
+
+.header-tagline{
+    color: #000000;
+}
+
+.profile-image{
+    position: relative;
+    margin: auto;
+    max-height: 250px;
+    border: 6px solid #899258;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.profile-image:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*HEADER*/
+
+
+/*PERSONAL INFO*/
+
+.personal-info{
+    text-align: left;
+    border-bottom: dashed 2px #9DBA00;
+    padding: 10px 10px 10px 0px;
+}
+
+/* .about-img{
+    max-width: 450px;
+    min-width: 300px;
+    border: 6px solid #899258;
+}
+.about-img-container{
+    float: right;
+    margin: auto;
+} */
+
+.row.row-eq-height {
+    display: flex;
+}
+
+@media only screen and (max-width: 850px) {
+    .personal-img-container{
+        float: none;
+    }
+    .row.row-eq-height {
+        display: initial;
+    }
+}
+
+/*PERSONAL INFO*/
+
+
+/*MY EDUCATION*/
+
+#myeducation{
+    background-color:#cecece;
+    min-height: 500px;
+}
+
+.myeducation-container{
+    padding: 10px;
+    text-align: left;
+}
+
+.myeducation-year{
+    border-left: 4px solid #9DBA00;
+    padding-left: 10px;
+}
+
+.myeducation-underline{
+    border-color: black;
+}
+
+/*MY EDUCATION*/
+
+#myexperience{
+    background-color:#cecece;
+    min-height: 500px;
+    text-align: center;
+    color: white;
+}
+
+/*MY SKILL*/
+
+.myskill-bg-image {
+    /* display: block; */
+    text-align: center;
+    background: url('../img/bg2.jpg') no-repeat center center scroll;
+    background-size: cover;
+    height: inherit;
+}
+
+.myskill-title{
+    color: #9DBA00;
+}
+
+.myskill-container{
+    padding: 30px;
+    text-align: left;
+    color: white;
+}
+
+.myskill-progress-title{
+    padding: 10px 10px 10px 0px;
+}
+
+/*MY SKILL*/
+
+
+/*CONTACT*/
+
+#contact{
+    padding-bottom: 50px;
+}
+
+.contact-input{
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contact-button{
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+    width: 100%;
+}
+
+/*CONTACT*/
+
+
+/*FOOTER*/
+
+footer {
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+/*FOOTER*/
+
+
+/*GENERAL*/
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.section{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.section-title{
+    font-size: 2em;
+    font-weight: bold;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+/*GENERAL*/
